@@ -38,7 +38,7 @@
             background-color: white;
             margin: 15px 20px;
             height: 200px;
-            background-size: cover;
+            background-size: 100%;
             position: relative;
             cursor: pointer;
         }
@@ -62,20 +62,30 @@
         }
 
         #image1 {
-            background-image: url(./img1.png);
+            background-image: url(./img1.jpg);
+            background-size: cover;
+            background-position: center;
         }
 
         #image2 {
-            background-image: url(./img2.png);
+            background-image: url(./img2.jpg);
+            background-size: cover;
+            background-position: center;
         }
 
         #image3 {
-            background-image: url(./img3.png);
+            background-image: url(./img3.jpg);
+            background-size: cover;
+            background-position: center;
+
+
         }
 
-        #image4 {
+        /* #image4 {
             background-image: url(./img4.png);
-        }
+            background-image: cover;
+            background-position: center;
+        } */
 
         .photo_description {
             color: white;
@@ -157,28 +167,27 @@
 
 
                 <span id="desc1" class="photo_description">
-                    첫 번째 이미지 설명
+                    발로 콕콕 건들기
                 </span>
             </div>
             <div id="image2" class="photo-frame" onmouseover="showText(2)" onmouseout="hideText(2)"
                 onclick="alertText(2)">
 
                 <span id="desc2" class="photo_description">
-                    두 번째 이미지 설명
+                    여보가 제일 좋아하는 배경
                 </span>
             </div>
             <div id="image3" class="photo-frame" onmouseover="showText(3)" onmouseout="hideText(3)"
                 onclick="alertText(3)">
 
                 <span id="desc3" class="photo_description">
-                    세 번째 이미지 설명
+                    우리 인생샷
                 </span>
             </div>
             <div class="photo-frame" onmouseover="showText(4)" onmouseout="hideText(4)" onclick="alertText(4)">
 
-                <iframe src="https://www.youtube.com/embed/TWz1btekxfs?si=x8dd0MhT4kT5s5ks" class="video"
-                    frameborder="0">
-
+                <iframe src="./video.mp4" class="video" frameborder="0" c>
+                    대천 첫눈 ㅋㅋㅋㅋ
                 </iframe>
             </div>
         </div>
